@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:onClick="callApi"
+        android:layout_gravity="start"
+        android:gravity="start"
+        android:textAppearance="@style/TextLabelStyle"
+        android:textColor="#3ba2c5"
+        android:padding="10dip"
+        android:layout_margin="10dip"
+        android:textStyle="bold"
+        android:textSize="@dimen/btn_textSize"
+        android:text="@string/label_btn"/>
+
+    <FrameLayout
+        android:id="@+id/list_item_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:id="@+id/list_item_progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:focusable="true"
+            android:visibility="invisible" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/list_item_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+</LinearLayout>

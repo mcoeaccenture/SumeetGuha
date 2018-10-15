@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="line_divider_width_height">1dp</dimen>
+    <dimen name="list_item_padding_margin">4dip</dimen>
+    <dimen name="btn_textSize">14sp</dimen>
+</resources>
